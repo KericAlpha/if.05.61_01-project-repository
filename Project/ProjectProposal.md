@@ -1,8 +1,8 @@
-# Project: RPG
+# Kingdom of Souls
 
 ## Introduction:
 
-Our project, called (I don't know - an RPG), is a turn-based roleplay game (RPG) with pixel graphics. The focus of the game is on the combat system. It should be as unique as possible. The opponents have a shield that can be destroyed with various physical and magical attacks. If the shield is broken, the enemy is stunned, takes a lot more damage and is no longer immune to any attacks. As a player you have a party of up to 7 members, but only 4 can be seen on the field. The rest of them sit on the "bench" that can be exchanged at will. Combo attacks are possible with any character. Each member has a “soul bar” which is refilled after each move, and when it is completely refilled, you can perform a reinforced move. The opponents are met by chance in the open game world, which contains many puzzles and dungeons. The game takes place in the Middle Ages. The world includes a large kingdom and outside of the infrastructure there are many small villages and dark dungeons.
+Our project, called Kingdom of Souls, is a turn-based roleplay game (RPG) with pixel graphics. The focus of the game is on the combat system. It should be as unique as possible. The opponents have a shield that can be destroyed with various physical and magical attacks. If the shield is broken, the enemy is stunned, takes a lot more damage and is no longer immune to any attacks. As a player you have a party of up to 7 members, but only 4 can be seen on the field. The rest of them sit on the "bench" that can be exchanged at will. Combo attacks are possible with any character. Each member has a “soul bar” which is refilled after each move, and when it is completely refilled, you can perform a reinforced move. The opponents are met by chance in the open game world, which contains many puzzles and dungeons. The game takes place in the Middle Ages. The world includes a large kingdom and outside of the infrastructure there are many small villages and dark dungeons.
 
 <br><br>
 
