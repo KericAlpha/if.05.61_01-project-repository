@@ -45,6 +45,11 @@ The difficulty of the game can lead to people not buying it, because they are be
 
 The gameplay and the story might be not long enough for players.
 
+Some of the sprites and textures might not look that good, becuase of our current skill level.
+
+Because of schoolwork and the high learning curve, we might not reach our goals in time.
+
+
 ## Planning:
 
 Milestones:
