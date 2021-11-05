@@ -50,13 +50,19 @@ The gameplay and the story might be not long enough for players.
 Milestones:
 
 Writing a part of the story 12.11.21
+
+Creating sketches for the UI in battle and outside of the battle 19.11.21
+
 Creating sketches for the most important characters of the game 26.11.21
-Creating sketches for map, that includes cities, dungeons, puzzles etc. 10.12.21
+
+Creating sketches for map, that includes cities, dungeons, puzzles etc. 17.12.21
+
 Programming the first prototype of the battlesystem 21.01.21
+
 Creating the first overworld areas/maps of the game 18.01.21 
-
-
 
 The project will start now and end near the end of the school year.
 
 The big blocks of work would be programming the battle system, pixelating sprites and graphics, write a script, creating the world, making sounds and backgroundmusic.
+
+Keric Ajdin, Wizany Dominik, Cajdin Ajdin
