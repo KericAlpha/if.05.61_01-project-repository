@@ -44,7 +44,6 @@ public class RomanNumberConverter {
         return arabic;
     }
     enum Numeral{
-        FIFTY(50, "L"),
         TEN(10, "X"),
         NINE(9,"IX"),
         FIVE(5,"V"),

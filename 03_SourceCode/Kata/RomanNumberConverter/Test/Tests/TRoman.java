@@ -80,6 +80,11 @@ public class TRoman {
     void ItShouldReturn4GivenIV() {
         assertEquals(4,RomanNumberConverter.toArabic("IV"));
     }
+
+    @Test
+    void ItShouldReturn9GivenIX() {
+        assertEquals(9,RomanNumberConverter.toArabic("IX"));
+    }
 }
 
 
