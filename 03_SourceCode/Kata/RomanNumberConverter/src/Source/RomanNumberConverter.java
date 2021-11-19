@@ -16,7 +16,15 @@ public class RomanNumberConverter {
 
     public static int toArabic(String roman)
     {
-        return 1;
+        if(roman == "I")
+        {
+            return 1;
+        }
+        if(roman == "II")
+        {
+            return 2;
+        }
+        return 0;
     }
     enum Numeral{
         TEN(10, "X"),
