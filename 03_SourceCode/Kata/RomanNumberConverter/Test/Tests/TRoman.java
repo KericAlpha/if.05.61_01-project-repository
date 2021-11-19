@@ -75,6 +75,11 @@ public class TRoman {
     void ItShouldReturn6GivenVI() {
         assertEquals(6,RomanNumberConverter.toArabic("VI"));
     }
+
+    @Test
+    void ItShouldReturn4GivenIV() {
+        assertEquals(4,RomanNumberConverter.toArabic("IV"));
+    }
 }
 
 

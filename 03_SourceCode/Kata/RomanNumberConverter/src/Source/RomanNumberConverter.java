@@ -26,6 +26,14 @@ public class RomanNumberConverter {
         {
             for(var numeral : Numeral.values())
             {
+                if(i < roman.length()-1)
+                {
+                    if((Character.toString(roman.charAt(i)) + Character.toString(roman.charAt(i + 1))).equals(numeral.mRoman))
+                    {
+                        arabic += numeral.mArabic;
+                        i ++;
+                    }
+                }
                 if(Character.toString(roman.charAt(i)).equals(numeral.mRoman))
                 {
                     arabic += numeral.mArabic;
@@ -36,6 +44,7 @@ public class RomanNumberConverter {
         return arabic;
     }
     enum Numeral{
+        FIFTY(50, "L"),
         TEN(10, "X"),
         NINE(9,"IX"),
         FIVE(5,"V"),
