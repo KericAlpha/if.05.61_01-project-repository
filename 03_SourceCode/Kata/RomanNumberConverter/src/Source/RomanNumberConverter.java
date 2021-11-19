@@ -2,6 +2,10 @@ package Source;
 
 public class RomanNumberConverter {
 
+    public static void main(String[] args) {
+        System.out.println(Numeral.ONE.mRoman + Numeral.ONE.mRoman);
+    }
+
     public static String toRoman(int aNumber)
     {
         String romanNumber = "";
@@ -16,11 +20,15 @@ public class RomanNumberConverter {
 
     public static int toArabic(String roman)
     {
-        if(roman == "I")
+        if(roman == Numeral.FIVE.mRoman)
+        {
+            return 5;
+        }
+        if(roman == Numeral.ONE.mRoman)
         {
             return 1;
         }
-        if(roman == "II")
+        if(roman.equals((Numeral.ONE.mRoman + Numeral.ONE.mRoman)))
         {
             return 2;
         }
