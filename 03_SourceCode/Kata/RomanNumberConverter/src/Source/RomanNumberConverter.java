@@ -20,19 +20,20 @@ public class RomanNumberConverter {
 
     public static int toArabic(String roman)
     {
-        if(roman == Numeral.FIVE.mRoman)
+        int arabic = 0;
+
+        for (int i = 0; i < roman.length() ; i++)
         {
-            return 5;
+            for(var numeral : Numeral.values())
+            {
+                if(Character.toString(roman.charAt(i)).equals(numeral.mRoman))
+                {
+                    arabic += numeral.mArabic;
+                }
+            }
         }
-        if(roman == Numeral.ONE.mRoman)
-        {
-            return 1;
-        }
-        if(roman.equals((Numeral.ONE.mRoman + Numeral.ONE.mRoman)))
-        {
-            return 2;
-        }
-        return 0;
+
+        return arabic;
     }
     enum Numeral{
         TEN(10, "X"),
