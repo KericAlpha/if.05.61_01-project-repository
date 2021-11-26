@@ -121,4 +121,30 @@ public class TOrderedJobs {
 
         assertEquals("ABCD", sut_.getList());
     }
+
+    @Test
+    void ItShouldReturnEABCD_GivenEandDdependsOnCandCdependsOnBandBdependsOnA() {
+        var sut_ = new OrderedJobs();
+        sut_.registerJob("E");
+        sut_.registerJob("D","C");
+        sut_.registerJob("C","B");
+        sut_.registerJob("B","A");
+
+        sut_.sort();
+
+        assertEquals("EABCD", sut_.getList());
+    }
+
+    @Test
+    void ItShouldReturnEAFBCD_GivenEandDdependsOnCandCdependsOnBandBdependsOnAandF() {
+        var sut_ = new OrderedJobs();
+        sut_.registerJob("E");
+        sut_.registerJob("D","C");
+        sut_.registerJob("C","B");
+        sut_.registerJob("B","A");
+        sut_.registerJob("F");
+        sut_.sort();
+
+        assertEquals("EAFBCD", sut_.getList());
+    }
 }
