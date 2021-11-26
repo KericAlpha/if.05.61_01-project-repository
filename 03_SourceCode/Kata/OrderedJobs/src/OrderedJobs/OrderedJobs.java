@@ -1,45 +1,82 @@
 package OrderedJobs;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 
 public class OrderedJobs {
 
-    private List<Job> jobs = new LinkedList<Job>();
+    private LinkedList<Job> jobs = new LinkedList<Job>();
 
     public void registerJob(String jobName)
     {
-        if(!jobs.contains(jobName)) {
+        boolean isAlreadyRegistered = false;
+        for(Job job : jobs)
+        {
+            if(job.getName().equals(jobName))
+            {
+                isAlreadyRegistered = true;
+            }
+        }
+
+        if(!isAlreadyRegistered)
+        {
             jobs.add(new Job(jobName));
         }
     }
 
     public void registerJob(String dependent,String independent)
     {
+
+        boolean isAlreadyRegistered = false;
+
         Job job = new Job(independent);
-        if(!jobs.contains(job))
+        for(Job jobOld : jobs)
+        {
+            if(jobOld.getName().equals(job.getName()))
+            {
+                job = jobOld;
+                isAlreadyRegistered = true;
+            }
+        }
+
+        if(!isAlreadyRegistered)
         {
             jobs.add(job);
         }
 
-        Job job2 = new Job(dependent,job);
-        if(!jobs.contains(job2))
+        Job job2 = new Job(dependent);
+        isAlreadyRegistered = false;
+
+        for(Job jobOld : jobs)
         {
+            if(Objects.equals(jobOld.getName(), job2.getName()))
+            {
+                jobOld.setDependsOn(job);
+                isAlreadyRegistered = true;
+            }
+        }
+
+        if(!isAlreadyRegistered)
+        {
+            job2 = new Job(dependent, job);
             jobs.add(job2);
         }
     }
 
     public void sort()
     {
-        char[] arr = jobs.toCharArray();
+        Collections.sort(jobs);
+        /*char[] arr = jobs.toCharArray();
         Arrays.sort(arr);
-        jobs = new String(arr);
+        jobs = new String(arr);*/
     }
 
     public String getList()
     {
-        return jobs;
+        String jobsInOrderOfDependency = "";
+        for(Job job : jobs)
+        {
+            jobsInOrderOfDependency += job.toString();
+        }
+        return jobsInOrderOfDependency;
     }
 }

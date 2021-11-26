@@ -54,7 +54,7 @@ public class TOrderedJobs {
     }
 
     @Test
-    void ItShouldReturnABCGivenCDependsOnBAndBDependsOnC() {
+    void ItShouldReturnABCGivenCDependsOnBAndBDependsOnA() {
         //arrange
         var sut_ = new OrderedJobs();
         sut_.registerJob("B","A");
@@ -78,7 +78,7 @@ public class TOrderedJobs {
     }
 
     @Test
-    void ItShouldReturnABCGivenDdependsOnBandBdependsOnC() {
+    void ItShouldReturnABC_GivenCdependsOnBandBdependsOnA() {
         var sut_ = new OrderedJobs();
         sut_.registerJob("C","B");
         sut_.registerJob("B","A");
@@ -97,5 +97,28 @@ public class TOrderedJobs {
         sut_.sort();
 
         assertEquals("BA", sut_.getList());
+    }
+
+    @Test
+    void ItShoudReturnBA_Given() {
+        var sut_ = new OrderedJobs();
+        sut_.registerJob("B");
+        sut_.registerJob("A");
+
+        sut_.sort();
+
+        assertEquals("BA", sut_.getList());
+    }
+
+    @Test
+    void ItShouldReturnABCD_GivenDdependsOnCandCdependsOnBandBdependsOnA() {
+        var sut_ = new OrderedJobs();
+        sut_.registerJob("D","C");
+        sut_.registerJob("C","B");
+        sut_.registerJob("B","A");
+
+        sut_.sort();
+
+        assertEquals("ABCD", sut_.getList());
     }
 }
