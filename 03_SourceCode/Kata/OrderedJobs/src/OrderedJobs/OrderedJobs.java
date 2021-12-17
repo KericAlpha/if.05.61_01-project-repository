@@ -50,7 +50,7 @@ public class OrderedJobs {
         {
             if(Objects.equals(jobOld.getName(), job2.getName()))
             {
-                jobOld.setDependsOn(job);
+                jobOld.addDepend(job);
                 isAlreadyRegistered = true;
             }
         }
@@ -65,9 +65,6 @@ public class OrderedJobs {
     public void sort()
     {
         Collections.sort(jobs);
-        /*char[] arr = jobs.toCharArray();
-        Arrays.sort(arr);
-        jobs = new String(arr);*/
     }
 
     public String getList()
