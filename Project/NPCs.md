@@ -24,6 +24,18 @@ Undead: Dark and weak Physical attacks. Can steal mana and HP from enemies with 
 
 ## NPCs
 
+Warrior Party Member
+
+Assassin Party Member
+
+Magician Party Member
+
+Healer Party Member
+
+Supporter Party Member
+
+Undead Party Member
+
 ## Enemies
 
 Skeleton -> Undead -> weak against Electric and Light -> resists Dark
@@ -43,6 +55,18 @@ Slime -> Magician -> weak against Fire and Ice -> resists Physical and Electric
 Thief -> Assassin -> weak against Ice -> resists Electric and Dark
 
 Plague Doctor -> Healer or Supporter -> weak against Physical and Electric -> resists Light and Dark
+
+## Bosses
+
+First City Undead General
+
+Second City Undead General
+
+Third City Undead General
+
+Fourth City Undead General
+
+Undead King
 
 
 
