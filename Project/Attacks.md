@@ -42,7 +42,7 @@ Darkclaw, 65, 90, 30, Single Target Attack
 
 ## Status
 
-Light, 0, 90, 40, Sinks Accuracy
+Light, 0, 90, 40, Sinks Enemy Accuracy
 
 Healcloud, 0, 100, 100, AOE Heal Multiplicator = 1
 
@@ -51,6 +51,8 @@ Healing Hand, 0, 100, 140, Single Target Heal Multiplicator = 1.4
 DMG Boost, 0, 100, 100, Self DMG Buff
 
 Suit Up, 0, 100, 90, Self DEF Buff
+
+Cobweb, 0, 80, 50, Sinks Enemy Speed
 
 ## Mid Game Moves
 
@@ -62,7 +64,7 @@ Horizontal Slash, 80, 90, 50, AOE Attack
 
 Air Cutter, 50, 85, 15, Single Target Attack
 
-Heart Stabber, 90, 80, 55, Single Target Attack, may bleed the enemy
+Heart Stabber, 90, 80, 55, Single Target Attack, may bleed the enemy (excluding skeletons)
 
 ## Electric
 
@@ -76,11 +78,11 @@ Fireball, 100, 85, 70, Single Target Attack
 
 Imblaze, 60, 75, 60, Single Target Attack, burns the enemy
 
-Fire Wave, 80, 90, 70, low chance to burn enemies
+Fire Wave, 80, 90, 70, AOE Attack, low chance to burn enemies
 
 ## Ice
 
-Freeze, 50, 60, 60, Single Target Attack, freezes the enemy (1-2 turn)
+Freeze, 50, 60, 60, Single Target Attack, great change to freeze the enemy (1-2 turn)
 
 Ice Arrow, 80, 90, 60, Single Target Attack, may freeze the enemy
 
@@ -94,11 +96,15 @@ Sacred Sword, 100, 85, 80, Single Target Attack
 
 Eclipse, 75, 90, 65, Single Target Attack, sinks accuracy of the enemy
 
-Demon's Scythe, 100, 85, 80, Single Target Attack
+Demons Scythe, 100, 85, 80, Single Target Attack
 
 ## Status
 
 Sharpen, 0, 100, 70, DMG Buff (only for Physical Attackers)
+
+Agility, 0, 100, 90, Speed Buff
+
+Taunt, 0, 100, 100, Enemies focus the user
 
 Heavens Blessing, 0, 100, 300, AOE Heal Multiplicator = 1.4
 
@@ -124,28 +130,64 @@ Dark Wall, 0, 100, 200, Blocks Dark attack (1 time)
 
 ## Physical
 
+Wombo Combo, 10, 100, 0, Single Target Attack, Attacks the enemy for 100 Mana until there is not enough left, each hit adds +2 Power
 
+Final Blow, 90, 85, 80, Single Target Attack, if the enemy has less than 50% HP -> DMG Multiplicator = 1.2
+
+Primal Strike, 80, 90, 70, Single Target Attack, if the enemy is full HP (100% HP) -> DMG Multiplicator = 1.5
+
+Cataclysm, 130, 80, 0, AOE Attack, Cost = 25% own Health
 
 ## Electric
 
+Lightning Strike, 110, 90, 170, Single Target Attack, may paralyze the enemy
 
+Thunderstorm, 90, 90, 150, AOE Attack
+
+Ultimate Impact, 130, 90, 200, Single Target Attack, paralyze the enemy
 
 ## Fire
 
+Inferno, 90, 80, 100, Single Target Attack, may burn the enemy
 
+Dragon's Breath, 110, 85, 160, Single Target Attack
+
+Nova Burst, 110, 90, 200, AOE Attack, needs 1 turn to charge, may burn the enemy
 
 ## Ice
 
+Icy Storm, 90, 85, 100, AOE Attack, may freeze the enemies
 
+Freezing Gaze, 90, 90, 120, Single Target Attack, great chance to freeze the enemy (1 turn)
+
+Frozen Mallet, 110, 85, 160, Single Target Attack
 
 ## Light
 
-Heavens Strike
+Heavens Strike, 110, 85, 150, Single Target Attack
+
+Gods Punishment, 100, 90, 180 AOE Attack
 
 ## Dark
 
-Hell's Call
+Hells Call, 110, 85, 150, Single Target Attack 
+
+Final Destination, 100, 90, 180, AOE Attack
 
 ## Status
 
 Allmighty Wall, 0, 100, 400, Blocks any kinds of attack (1 time)
+
+Coin Flip, 0, 100, 333, 50/50 chance to get a strong buff or a debuff/status effect (self) 
+
+Apollos Appearance, 0, 100, 500, Single Target Heal Multiplicator = 1.8
+
+Lighter, 0, 70, 250, burns the enemy
+
+Taser, 0, 70, 250, paralyze the enemy
+
+Ice Cube, 0, 70, 250, freeze the enemy 
+
+## Combo Attacks
+
+## Soulbar Attacks
